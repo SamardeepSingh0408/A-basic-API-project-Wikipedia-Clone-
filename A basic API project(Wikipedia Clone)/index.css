@@ -1,0 +1,107 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins';
+}
+.container{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+h1{
+    font-size:  3rem;
+    margin-bottom: 2rem;
+}
+#search-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+#search-input{
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    margin-right: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 1rem;
+    flex-grow: 1;
+}
+#search-input:focus{
+    outline: none;
+    border-color: whitesmoke;
+}
+button[type = 'submit']{
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    background-color: black;
+    color: whitesmoke;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+button[type = 'submit']:hover{
+   opacity: 85%;
+}
+#search-results{
+    margin-bottom: 2rem;
+}
+.result-item{
+    margin-bottom: 1rem;
+}
+.result-title{
+    font-size: 1.5rem;
+    margin-top: 0;
+}
+.result-link{
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: black;
+}
+.result-link:hover{
+    text-decoration: underline;
+    opacity: 85%;
+}
+.result-snippet{
+    margin-top: 0;
+}
+.spinner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    height: 10rem;
+}
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#theme-toggler{
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    background: #e2e2e2;
+    padding: 10px 10px ;
+    border-radius: 100px;
+}
+.dark-theme{
+    background-color: #282c34;
+    color: whitesmoke;
+}
+.dark-theme #search-input{
+    background-color: #454545;
+    color: whitesmoke;
+    border-color:wheat ;
+}
+.dark-theme #search-input:focus{
+    border-color: #0074d9;
+}
+.dark-theme button[type='submit']{
+    background-color: whitesmoke;
+    color: black;
+    font-size: 600;
+}
+.dark-theme .result-link, .dark-theme .result-link:hover{
+    color: #90caf9;
+}
